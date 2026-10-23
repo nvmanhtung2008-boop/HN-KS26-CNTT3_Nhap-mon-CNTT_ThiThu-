@@ -1,0 +1,5 @@
+"=== Tong Hop Log ===" >> ".\logs\tong_hop.txt"
+Write-Host "Dang loc"
+Get-content ".\logs\shop.log" | Select-String "warning" >> ".\logs\tong_hop.txt"
+Get-content ".\logs\shop.log" | Select-String "error" >> ".\logs\tong_hop.txt"
+Write-Host "Da xong"
